@@ -47,3 +47,12 @@ SET total_price = (
     WHERE OrderDetail.order_id = Orders.id
 );
 
+-- for orderDetail_id field at Orders TABLE
+ALTER TABLE Orders MODIFY orderDetail_id VARCHAR(5);
+
+UPDATE Orders
+SET orderDetail_id = (
+    SELECT GROUP_CONCAT(id)
+    FROM OrderDetail
+    WHERE OrderDetail.order_id = Orders.id
+)
