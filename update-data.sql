@@ -38,3 +38,12 @@ SET price = (
 -- for total_price field at OrderDetail table
 UPDATE OrderDetail
 SET total_price = quantity * price;
+
+-- for total_price field at Orders table
+UPDATE Orders
+SET total_price = (
+    SELECT SUM(total_price)
+    FROM OrderDetail
+    WHERE OrderDetail.order_id = Orders.id
+);
+
