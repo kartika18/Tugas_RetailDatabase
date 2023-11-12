@@ -26,3 +26,15 @@ ALTER TABLE Product AUTO_INCREMENT = 1;
 ALTER TABLE Orders ADD orderDetail_id INT NOT NULL AFTER total_price;
 
 ALTER TABLE Orders AUTO_INCREMENT = 1;
+
+-- for price field at OrderDetail table
+UPDATE OrderDetail
+SET price = (
+    SELECT price
+    FROM Product
+    WHERE Product.id = OrderDetail.product_id
+);
+
+-- for total_price field at OrderDetail table
+UPDATE OrderDetail
+SET total_price = quantity * price;

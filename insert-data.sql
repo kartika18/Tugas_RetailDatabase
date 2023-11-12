@@ -81,6 +81,3 @@ INSERT INTO OrderDetail (order_id, product_id, quantity, price, total_price, cre
 (11, 10, 1, 0, 0, CURRENT_DATE),
 (12, 4, 1, 0, 0, CURRENT_DATE),
 (12, 19, 1, 0, 0, CURRENT_DATE);
-
-SELECT * FROM Product;
-SELECT * FROM OrderDetail;
