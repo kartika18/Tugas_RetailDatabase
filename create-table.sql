@@ -24,7 +24,7 @@ CREATE TABLE Product (
     weight INT NOT NULL,
     created_at TIMESTAMP NOT NULL,
     Foreign Key (category_id) REFERENCES ProductCategory(id)
-)
+);
 
 CREATE TABLE Orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -33,7 +33,7 @@ CREATE TABLE Orders (
     order_date TIMESTAMP NOT NULL,
     created_at TIMESTAMP NOT NULL,
     Foreign Key (user_id) REFERENCES User(id)
-)
+);
 
 CREATE TABLE OrderDetail (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,4 +43,4 @@ CREATE TABLE OrderDetail (
     price INT NOT NULL,
     total_price INT NOT NULL,
     created_at TIMESTAMP NOT NULL
-) 
+);
