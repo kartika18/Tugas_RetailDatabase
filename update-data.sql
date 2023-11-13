@@ -48,7 +48,7 @@ SET total_price = (
 );
 
 -- for orderDetail_id field at Orders TABLE
-ALTER TABLE Orders MODIFY orderDetail_id VARCHAR(5);
+ALTER TABLE Orders MODIFY orderDetail_id VARCHAR(10);
 
 UPDATE Orders
 SET orderDetail_id = (
