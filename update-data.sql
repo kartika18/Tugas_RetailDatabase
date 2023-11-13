@@ -47,7 +47,7 @@ SET total_price = (
     WHERE OrderDetail.order_id = Orders.id
 );
 
--- for orderDetail_id field at Orders TABLE
+-- for orderDetail_id field at Orders table
 ALTER TABLE Orders MODIFY orderDetail_id VARCHAR(10);
 
 UPDATE Orders

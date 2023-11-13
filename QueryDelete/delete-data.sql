@@ -1,9 +1,9 @@
--- DELETE FROM Users
+DELETE FROM Users
 
--- DELETE FROM Product
+DELETE FROM Product
 
--- DELETE FROM ProductCategory
+DELETE FROM ProductCategory
 
--- DELETE FROM Orders
+DELETE FROM Orders
 
--- DELETE FROM OrderDetail
+DELETE FROM OrderDetail

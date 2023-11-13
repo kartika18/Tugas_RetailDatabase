@@ -86,5 +86,6 @@ INSERT INTO OrderDetail (order_id, product_id, quantity, price, total_price, cre
 INSERT INTO Product (name, brand, category_id, description, weight, price, created_at) VALUES
 ('Chili Powder', "Mom's Kitchen", 3, "Chili Powder by Mom's Kitchen is made from real and good quality of chili. Appetizing spiciness!", 200, 15000, CURRENT_DATE);
 
+-- additional data for the OrderDetail table
 INSERT INTO OrderDetail (order_id, product_id, quantity, price, total_price, created_at) VALUES 
 (12, 15, 1, 0, 0, CURRENT_DATE);

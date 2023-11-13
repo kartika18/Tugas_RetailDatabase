@@ -1,9 +1,9 @@
--- DROP TABLE Users
+DROP TABLE Users
 
--- DROP TABLE Product
+DROP TABLE Product
 
--- DROP TABLE ProductCategory
+DROP TABLE ProductCategory
 
--- DROP TABLE Orders
+DROP TABLE Orders
 
--- DROP TABLE OrderDetail
+DROP TABLE OrderDetail
